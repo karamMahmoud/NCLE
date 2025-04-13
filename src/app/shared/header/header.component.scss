@@ -1,0 +1,44 @@
+@import '../../../theme/variables';
+
+.header {
+  background-color: $white;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba($text-color, 0.1);
+
+  .container {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: $text-color;
+    font-weight: $font-weight-bold;
+    font-size: 1.25rem;
+
+    .logo-text {
+      color: $primary-color;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .nav-link {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: $font-weight-medium;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
