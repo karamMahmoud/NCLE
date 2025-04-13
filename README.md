@@ -26,7 +26,7 @@ src/ ├── app/ │ ├── home/ # Home page logic and layout │ ├─�
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/karamMahmoud/surprise-box.git](https://github.com/karamMahmoud/NCLE)
+git clone (https://github.com/karamMahmoud/NCLE)
 cd surprise-box
 2. Install Dependencies
 Make sure you have npm and Ionic CLI installed:
