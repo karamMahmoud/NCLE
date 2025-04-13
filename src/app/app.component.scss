@@ -1,0 +1,54 @@
+@import '../theme/variables';
+
+
+// Global styles
+:host {
+  display: block;
+  font-family: $font-family-base;
+}
+
+ion-app {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-base;
+}
+
+// Purple background container
+.purple-background {
+  background-color: $primary-color;
+  color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 70px; // Fixed height for header
+}
+
+// Header
+.header {
+  height: 100%;
+  padding: 0 $spacing-3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $container-max-width;
+  margin: 0 auto;
+
+  .logo {
+    font-size: $font-size-lg;
+    font-weight: bold;
+    color: $white;
+  }
+}
+
+// Add margin-top to router-outlet content
+::ng-deep ion-router-outlet {
+  margin-top: 70px; // Same as header height
+}
+
+// Remove padding-top from ion-content since we're using margin on router-outlet
+ion-content {
+  --padding-top: 0;
+  font-family: $font-family-base;
+}
